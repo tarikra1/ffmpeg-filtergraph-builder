@@ -1,0 +1,3 @@
+"""Composable, zero-dependency FFmpeg -filter_complex builder for 9:16 smart crop, EBU R128 loudness normalization, and sidechain audio ducking."""
+
+__version__ = "1.0.0"

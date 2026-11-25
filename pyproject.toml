@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ffmpeg-filtergraph-builder"
+version = "1.0.0"
+description = "Composable, zero-dependency FFmpeg -filter_complex builder for 9:16 smart crop, EBU R128 loudness normalization, and sidechain audio ducking."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+  { name = "Tarik", email = "tarikra1@users.noreply.github.com" }
+]
+keywords = ["ffmpeg", "video-processing", "filtergraph", "loudnorm", "reels", "python", "audio-ducking"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/tarikra1/ffmpeg-filtergraph-builder"
+Repository = "https://github.com/tarikra1/ffmpeg-filtergraph-builder"
+Changelog = "https://github.com/tarikra1/ffmpeg-filtergraph-builder/blob/main/CHANGELOG.md"
+Issues = "https://github.com/tarikra1/ffmpeg-filtergraph-builder/issues"
+
+[project.scripts]
+ffgraph = "ffmpeg_filtergraph_builder.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
